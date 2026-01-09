@@ -21,18 +21,382 @@
         .border-linkedin {
             border-color: #0077b5;
         }
+        @keyframes bounce-slow {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+        }
+        .animate-bounce-slow {
+          animation: bounce-slow 3s ease-in-out infinite;
+        }
+        .whatsapp-gradient {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
-  }
-}
-</script>
 </head>
 <body class="bg-slate-50 text-slate-900">
-    <div id="root"></div>
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-linkedin rounded-lg flex items-center justify-center text-white font-bold text-2xl">
+            in
+          </div>
+          <span class="text-xl font-bold tracking-tight text-slate-800 hidden sm:inline">
+            LinkRent<span class="text-linkedin">.com</span>
+          </span>
+        </div>
+        
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+          <a href="#requirements" class="hover:text-linkedin transition-colors">Requirements</a>
+          <a href="#how-it-works" class="hover:text-linkedin transition-colors">How it Works</a>
+          <a href="#benefits" class="hover:text-linkedin transition-colors">Benefits</a>
+          <a href="#faq" class="hover:text-linkedin transition-colors">FAQ</a>
+        </nav>
+
+        <a 
+          href="https://wa.me/233540834343" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="bg-linkedin hover:bg-[#006097] text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg active:scale-95 text-sm"
+        >
+          Contact Us
+        </a>
+      </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-20 pb-24 overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10 pointer-events-none">
+                <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-linkedin rounded-full blur-[120px] animate-pulse"></div>
+                <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-linkedin rounded-full blur-[120px] animate-pulse"></div>
+            </div>
+
+            <div class="container mx-auto px-4 text-center">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-linkedin border border-blue-100 mb-6 animate-bounce-slow">
+                    <span class="text-xs font-bold uppercase tracking-wider">Join 500+ Active Partners</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-tight max-w-4xl mx-auto tracking-tight">
+                    Turn Your Old LinkedIn Account into <span class="text-linkedin">Passive Income</span> 💼💰
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+                    We rent LinkedIn accounts strictly for commercial use — placing adverts and building partnerships with experienced professionals.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/233540834343" class="w-full sm:w-auto bg-linkedin text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-[#006097] transition-all shadow-xl hover:-translate-y-1 flex items-center justify-center gap-3 group">
+                        <span>Rent My Account Now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://chat.whatsapp.com/L75V44DyOhS5NAzSxMx9zf" class="w-full sm:w-auto bg-white text-slate-800 border border-slate-200 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-50 transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2">
+                        View Proof of Payment
+                    </a>
+                </div>
+
+                <div class="mt-20 flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="flex flex-col items-center gap-1 group">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold group-hover:text-linkedin transition-colors">
+                            <svg class="w-5 h-5 text-linkedin" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L10 13.17l7.59-7.59L19 7l-8 10z"/></svg>
+                            <span>Safe & Secure</span>
+                        </div>
+                        <span class="text-xs text-slate-400 font-medium">Verified Partners</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 group">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold group-hover:text-linkedin transition-colors">
+                            <svg class="w-5 h-5 text-linkedin" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L10 13.17l7.59-7.59L19 7l-8 10z"/></svg>
+                            <span>Weekly Payouts</span>
+                        </div>
+                        <span class="text-xs text-slate-400 font-medium">Automated Systems</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-1 group">
+                        <div class="flex items-center gap-2 text-slate-900 font-bold group-hover:text-linkedin transition-colors">
+                            <svg class="w-5 h-5 text-linkedin" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L10 13.17l7.59-7.59L19 7l-8 10z"/></svg>
+                            <span>Privacy First</span>
+                        </div>
+                        <span class="text-xs text-slate-400 font-medium">Commercial Only</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Do You Qualify?</h2>
+                    <p class="text-slate-600 max-w-xl mx-auto">Check these requirements before reaching out to ensure a fast onboarding process.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="group bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-linkedin/30 transition-all duration-300 hover:shadow-xl">
+                        <div class="text-4xl mb-6">📅</div>
+                        <h3 class="text-sm font-bold text-linkedin uppercase tracking-widest mb-2">Account Age</h3>
+                        <div class="text-2xl font-bold text-slate-900 mb-4">2+ Years Old</div>
+                        <p class="text-slate-600 leading-relaxed">Your account must be established for at least 24 months to ensure platform trust.</p>
+                    </div>
+                    <div class="group bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-linkedin/30 transition-all duration-300 hover:shadow-xl">
+                        <div class="text-4xl mb-6">👥</div>
+                        <h3 class="text-sm font-bold text-linkedin uppercase tracking-widest mb-2">Connections</h3>
+                        <div class="text-2xl font-bold text-slate-900 mb-4">300+ Active</div>
+                        <p class="text-slate-600 leading-relaxed">A minimum of 300 professional connections is required for our commercial campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-24 bg-slate-50 overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Simple 4-Step Process</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto text-lg">Getting started is easy. We handle the technical setup while you enjoy the rewards.</p>
+                </div>
+
+                <div class="relative grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-slate-200 -z-10"></div>
+                    
+                    <div class="relative flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-slate-50 mb-8 transition-transform group-hover:scale-110 group-hover:border-linkedin/20">
+                            <div class="text-linkedin">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 bg-linkedin text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg">01</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Contact Us</h3>
+                        <p class="text-slate-500 leading-relaxed px-4">Reach out via WhatsApp with your account details for a quick screening.</p>
+                    </div>
+
+                    <div class="relative flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-slate-50 mb-8 transition-transform group-hover:scale-110 group-hover:border-linkedin/20">
+                            <div class="text-linkedin">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 bg-linkedin text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg">02</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Account Review</h3>
+                        <p class="text-slate-500 leading-relaxed px-4">Our team verifies if your account meets the age and connection requirements.</p>
+                    </div>
+
+                    <div class="relative flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-slate-50 mb-8 transition-transform group-hover:scale-110 group-hover:border-linkedin/20">
+                            <div class="text-linkedin">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 bg-linkedin text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg">03</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Safe Setup</h3>
+                        <p class="text-slate-500 leading-relaxed px-4">We set up the commercial access securely without affecting your personal use.</p>
+                    </div>
+
+                    <div class="relative flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-slate-50 mb-8 transition-transform group-hover:scale-110 group-hover:border-linkedin/20">
+                            <div class="text-linkedin">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-10 h-10 bg-linkedin text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg">04</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Start Earning</h3>
+                        <p class="text-slate-500 leading-relaxed px-4">Receive your first weekly passive income payment directly to your preferred method.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-24 bg-slate-900 text-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+                    <div class="md:w-1/2">
+                        <div class="inline-block px-4 py-1.5 bg-linkedin/20 text-linkedin rounded-full text-sm font-bold mb-6">WHY RENT WITH US?</div>
+                        <h2 class="text-4xl font-bold mb-6">Maximize Your Account's Professional Value</h2>
+                        <p class="text-slate-400 text-lg mb-8">Stop letting your old LinkedIn account gather dust. Partner with us and join hundreds of others earning passive income safely.</p>
+                        <div class="p-6 border-l-4 border-linkedin bg-white/5 rounded-r-xl italic text-slate-300">
+                            "Turn an unused asset into a consistent weekly revenue stream while helping experts scale professional adverts."
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors">
+                            <div class="w-12 h-12 bg-linkedin rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Place Commercials</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">We use high-authority accounts to place niche-specific professional advertisements.</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors">
+                            <div class="w-12 h-12 bg-linkedin rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Professional Partnerships</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">Work alongside experienced professionals building B2B partnerships globally.</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors">
+                            <div class="w-12 h-12 bg-linkedin rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04a11.731 11.731 0 003.315 8.321c1.134 5.708 5.146 8.481 5.303 8.587.157-.106 4.169-2.879 5.303-8.587a11.731 11.731 0 003.315-8.321z"/></svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Safe & Secure</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">We value privacy and security. Our processes are strictly commercial and professional.</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors">
+                            <div class="w-12 h-12 bg-linkedin rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Earn Weekly</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">Get paid consistently every week for an asset that's currently sitting idle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof Section -->
+        <section class="py-24 bg-blue-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto bg-white rounded-[3rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-linkedin/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                    
+                    <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                        <div class="md:w-1/2">
+                            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                                Don't Just Take Our Word For It.
+                            </h2>
+                            <p class="text-lg text-slate-600 mb-8">
+                                Join our private WhatsApp group to see real-time payment proofs, community feedback, and successful partnerships. We believe in 100% transparency.
+                            </p>
+                            <a href="https://chat.whatsapp.com/L75V44DyOhS5NAzSxMx9zf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#1ebd5e] transition-all shadow-lg hover:shadow-[#25D366]/40">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.171c1.589.945 3.532 1.443 5.512 1.444 5.679 0 10.297-4.617 10.299-10.296.001-2.752-1.071-5.339-3.018-7.288-1.948-1.948-4.534-3.02-7.285-3.021-5.679 0-10.296 4.619-10.298 10.297-.001 1.815.474 3.586 1.376 5.155l-1.01 3.691 3.774-.99zm11.332-6.502c-.301-.15-1.782-.88-2.056-.98-.275-.1-.475-.15-.675.15s-.775.98-.95 1.18-.35.225-.65.075c-.3-.15-1.265-.467-2.41-1.485-.89-.794-1.49-1.773-1.665-2.074s-.019-.462.13-.611c.135-.135.3-.35.45-.525s.2-.3.3-.5.05-.375-.025-.525-.675-1.625-.925-2.225c-.244-.582-.491-.504-.675-.514-.175-.008-.375-.01-.575-.01s-.525.075-.8.375c-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.115 3.23 5.125 4.53.715.309 1.274.494 1.708.632.719.228 1.373.196 1.89.119.578-.085 1.782-.728 2.032-1.429s.25-1.301.175-1.429c-.075-.125-.275-.2-.575-.35z"/></svg>
+                                <span>Join Proof Group</span>
+                            </a>
+                        </div>
+                        
+                        <div class="md:w-1/2 flex justify-center">
+                            <div class="relative w-full max-w-sm aspect-[4/5] bg-slate-100 rounded-3xl overflow-hidden shadow-inner border-8 border-slate-50">
+                                <div class="absolute inset-0 p-4">
+                                    <div class="h-full w-full bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+                                        <div class="bg-[#075e54] p-3 text-white text-xs flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <div class="w-6 h-6 bg-slate-200 rounded-full"></div>
+                                                <span>Payment Proofs 💸</span>
+                                            </div>
+                                            <div class="flex gap-2">
+                                                <div class="w-2 h-2 bg-white/20 rounded-full"></div>
+                                                <div class="w-2 h-2 bg-white/20 rounded-full"></div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow p-3 bg-[#e5ddd5] flex flex-col gap-3">
+                                            <div class="bg-white p-2 rounded-lg text-[10px] w-2/3 shadow-sm">
+                                                "Just received my weekly payment for renting my account! Thanks guys!"
+                                            </div>
+                                            <div class="bg-[#dcf8c6] p-2 rounded-lg text-[10px] w-2/3 self-end shadow-sm">
+                                                "Proof sent! Check your wallets everyone. 🚀"
+                                            </div>
+                                            <div class="w-full h-24 bg-slate-200 rounded-lg flex items-center justify-center text-[10px] text-slate-400 font-bold border-2 border-dashed border-slate-300">
+                                                IMAGE: TRANSFER_RECEIPT.PNG
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h3 class="font-bold text-lg mb-3 flex items-center gap-3">
+                                <span class="text-linkedin text-xl">?</span>
+                                Is this safe for my LinkedIn account?
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed pl-6">Yes. We strictly use accounts for commercial advertising and professional networking. We do not engage in spam or prohibited activities. Your personal data remains protected.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h3 class="font-bold text-lg mb-3 flex items-center gap-3">
+                                <span class="text-linkedin text-xl">?</span>
+                                What are the exact requirements?
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed pl-6">Your account must be at least 2 years old and have a minimum of 300 professional connections. This ensures the account has the necessary authority for commercial use.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h3 class="font-bold text-lg mb-3 flex items-center gap-3">
+                                <span class="text-linkedin text-xl">?</span>
+                                How often do I get paid?
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed pl-6">Payments are typically made on a recurring weekly basis. Full details on payment structure are provided during our initial WhatsApp consultation.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                            <h3 class="font-bold text-lg mb-3 flex items-center gap-3">
+                                <span class="text-linkedin text-xl">?</span>
+                                Do I still have access to my account?
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed pl-6">Yes, you maintain primary ownership. We simply utilize specific features for our commercial activities in a non-intrusive way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-32 md:pb-16 border-t border-white/5">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-linkedin rounded flex items-center justify-center text-white font-bold text-xl">in</div>
+                        <span class="text-xl font-bold tracking-tight">LinkRent</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-6">
+                        Empowering LinkedIn users to monetize their professional presence through secure, commercial partnerships.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#requirements" class="hover:text-linkedin transition-colors">Requirements</a></li>
+                        <li><a href="#benefits" class="hover:text-linkedin transition-colors">Benefits</a></li>
+                        <li><a href="#faq" class="hover:text-linkedin transition-colors">FAQ</a></li>
+                        <li><a href="https://chat.whatsapp.com/L75V44DyOhS5NAzSxMx9zf" class="hover:text-linkedin transition-colors">Proof Group</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-linkedin" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            +233 540834343
+                        </li>
+                        <li>Serious Inquiries Only</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/5 text-center text-slate-500 text-sm">
+                <p>© <span id="current-year"></span> LinkRent. All rights reserved. Strictly for commercial use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 md:hidden z-50 bg-white/90 backdrop-blur shadow-[0_-10px_20px_rgba(0,0,0,0.1)] border-t border-slate-100">
+      <a href="https://wa.me/233540834343" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-linkedin text-white w-full py-4 rounded-2xl font-bold text-lg shadow-lg active:scale-95 transition-transform">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.12l-1.02 3.716 3.834-1.005c.82.476 1.83.743 2.929.743 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm-2.458 7.373c-.15.075-.3.15-.45.075s-.3-.225-.45-.375-.3-.375-.45-.525.075-.3.15-.45.075-.3.15-.45c.075-.15.225-.3.375-.45s.15-.3.3-.45c.075-.15.225-.3.3-.45s-.075-.375-.15-.525c-.075-.15-.225-.3-.3-.45s-.15-.3-.3-.45c-.15-.15-.3-.3-.45-.45s-.3-.15-.45 0c-.15.15-1.05 1.05-1.05 2.55s1.05 2.85 1.2 3.15c.15.3 2.1 3.15 5.1 4.5.75.3 1.35.45 1.8.6.75.15 1.35.15 1.8.15.6 0 1.8-.75 2.1-1.35.3-.6.3-1.05.15-1.35s-.3-.15-.6-.3z"/></svg>
+        <span>Message Us on WhatsApp</span>
+      </a>
+    </div>
+
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
